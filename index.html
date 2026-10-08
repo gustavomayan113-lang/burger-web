@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brasa Burger | Hambúrguer artesanal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32 (2).png">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo"><i></i>BRASA BURGER</a>
+    <nav>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a class="cta-nav" href="#monte">Monte o seu</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+<!-- ===== HERO ===== -->
+<div class="hero" id="monte">
+  <div class="wrap">
+    <div>
+      <h1>Burger na <em>brasa</em>,<br>do seu jeito.</h1>
+      <p class="lead">Carne smash, pão macio e molho da casa. Escolha os ingredientes ao lado e veja o seu burger ser montado.</p>
+      <div class="cta-row"><a class="btn btn-red" href="#cardapio">Ver cardápio</a><svg class="selo" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="ci" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><circle cx="60" cy="60" r="58" fill="#C8102E"/><g><text font-family="Bowlby One,Arial Black,sans-serif" font-size="12" fill="#FFC21A" textLength="268" lengthAdjust="spacing"><textPath href="#ci">ARTESANAL • NA BRASA • FEITO NA HORA •</textPath></text></g><text x="60" y="68" text-anchor="middle" font-family="Bowlby One,Arial Black,sans-serif" font-size="24" fill="#fff">100%</text></svg></div>
+      <img class="hero-burger" src="img/Clássico da Brasa.png" alt="Hambúrguer artesanal" loading="lazy">
+    </div>
+
+    <div class="builder" aria-label="Monte seu burger">
+      <div class="stack" id="pilha" aria-hidden="true"></div>
+      <div>
+        <h2>Monte o seu</h2>
+        <small>Base com carne e pão: R$ 18</small>
+        <div class="chips" id="chips"></div>
+        <div class="total" id="totalMontado">R$ 18,00</div>
+        <div class="acoes"><button class="btn btn-dark" id="addMontado" style="background:var(--mostarda);color:var(--cafe)">Adicionar ao pedido</button><button class="btn sorte" id="sorte">🎲 Me surprenda</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="faixa" aria-hidden="true"><div id="faixa"></div></div>
+
+<div class="stats"><div class="wrap">
+  <div><b data-n="12000" data-suf="+">0</b><span>burgers servidos</span></div>
+  <div><b data-n="4.9" data-suf="★">0</b><span>nota dos clientes</span></div>
+  <div><b data-n="15" data-suf=" min">0</b><span>da chapa até a sua mesa</span></div>
+</div></div>
+
+<!-- ===== CARDÁPIO ===== -->
+<section id="cardapio">
+  <div class="wrap">
+    <h2 class="sec-titulo">Cardápio</h2>
+    <p>Toque em "Adicionar" e finalize o pedido pelo WhatsApp.</p>
+    <div class="filtros" id="filtros"></div>
+    <div class="grade" id="grade"></div>
+  </div>
+</section>
+
+<!-- ===== SOBRE ===== -->
+<section class="sobre" id="sobre">
+  <div class="wrap">
+    <!-- TROQUE A IMAGEM: coloque o caminho em data-src, ex.: data-src="imagens/cozinha.jpg" -->
+    <div class="slot" data-src="img/cozinha.png" data-alt="Nossa cozinha"><span>Foto da cozinha ou da equipe</span></div>
+    <div>
+      <h2>Feito na hora, sem pressa.</h2>
+      <p>Moemos a carne todo dia, assamos o pão na casa e cada burger vai para a chapa só depois que você pede.</p>
+      <p>Aqui o molho não vem de pacote: é receita nossa, e a gente guarda o segredo.</p>
+      <a class="btn btn-red" href="#cardapio">Pedir agora</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTATO ===== -->
+<section class="contato" id="contato">
+  <div class="wrap">
+    <div><h3>Onde estamos</h3><p>Rua do Hambúrguer, 123<br>Centro, Sua Cidade</p></div>
+    <div><h3>Horários</h3><p>Ter a Dom: 18h às 23h30<br>Segunda: fechado</p></div>
+    <div><h3>Pedidos</h3><p>WhatsApp: (00) 00000-0000<br>Instagram: @brasaburger</p></div>
+  </div>
+</section>
+</main>
+
+<footer>Brasa Burger · feito com muita brasa</footer>
+
+<!-- ===== BARRA DO PEDIDO ===== -->
+<div class="pedido" id="pedido" role="status">
+  <span><b id="qtd">0</b> itens · <b id="totalPedido">R$ 0,00</b></span>
+  <a id="zap" href="#" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+  <button class="limpar" id="limpar">Limpar</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
